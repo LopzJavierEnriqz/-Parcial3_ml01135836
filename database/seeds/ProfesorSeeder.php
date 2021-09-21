@@ -1,5 +1,5 @@
 <?php
-use App\Profesor;
+use App\Profesores;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
 
@@ -22,7 +22,7 @@ class ProfesorSeeder extends Seeder
             'dui' => '059240267',
             'telefono' => '71286126',
             'email' => 'armand1515.lc@gmail.com',
-            'password' => 'leonel1515'
+            'password' => bcrypt('leonel1515')
         ]);
 
         // Profesor::create({
@@ -33,5 +33,7 @@ class ProfesorSeeder extends Seeder
         //     'email' => 'armand1515.lc@gmail.com',
         //     'password' => 'leonel1515'
         // });
+
+        factory(Profesores::class, 18)->create();
     }
 }

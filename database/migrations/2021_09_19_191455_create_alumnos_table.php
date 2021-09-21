@@ -20,8 +20,8 @@ class CreateAlumnosTable extends Migration
             $table->string('fech_nac', 10);
             $table->string('direccion', 100);
             $table->string('genero', 1);
-            $table->integer('telefono');
-            $table->string('email')->unique();
+            $table->integer('telefono')->length(8);
+            $table->string('email');
             $table->string('password');
             $table->rememberToken();
             $table->timestamps();

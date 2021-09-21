@@ -4,7 +4,7 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Alumnos extends Model
+class Profesores extends Model
 {
-    protected $table = "alumnos";
+    protected $table = "profesor";
 }

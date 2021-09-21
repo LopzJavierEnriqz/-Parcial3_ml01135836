@@ -30,15 +30,7 @@ class CreateNotasTable extends Migration
 
             $table->integer('idalumno')->unsigned();
             $table->foreign('idalumno')->references('id')->on('alumnos')->onDelete('cascade')->onUpdate('cascade');
-
-
-
-            // $table->unsignedInteger('idalumno');
-            // $table->unsignedInteger('idcurso');
-            // $table->unsignedInteger('idprofesor');
-            // $table->foreign('idalumno')->references('id')->on('alumnos')->onDelete('cascade')->onUpdate('cascade');
-            // $table->foreign('idcurso')->references('id')->on('cursos')->onDelete('cascade')->onUpdate('cascade');
-            // $table->foreign('idprofesor')->references('id')->on('profesor')->onDelete('cascade')->onUpdate('cascade');
+            
             $table->timestamps();
         });
     }

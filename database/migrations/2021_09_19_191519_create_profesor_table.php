@@ -19,7 +19,7 @@ class CreateProfesorTable extends Migration
             $table->string('apellido');
             $table->string('dui')->length(10);
             $table->integer('telefono')->length(8);
-            $table->string('email')->unique();
+            $table->string('email');
             $table->string('password');
             $table->timestamps();
         });
