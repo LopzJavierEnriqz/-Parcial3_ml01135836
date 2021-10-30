@@ -23,6 +23,6 @@ class CursoSeeder extends Seeder
             'ciclo' => '2',
             'idprofesor' => '1'
         ]);
-        factory(Cursos::class, 18)->create();
+        //factory(Cursos::class, 18)->create();
     }
 }

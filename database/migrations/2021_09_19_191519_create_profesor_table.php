@@ -15,12 +15,15 @@ class CreateProfesorTable extends Migration
     {
         Schema::create('profesor', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('nombre')->length(10);
-            $table->string('apellido');
-            $table->string('dui')->length(10);
-            $table->integer('telefono')->length(8);
-            $table->string('email');
-            $table->string('password');
+            $table->string('nombre0',10)->nullable();
+            $table->string('nombre1',10)->nullable();
+            $table->string('apellido0',10)->nullable();
+            $table->string('apellido1',10)->nullable();
+            $table->string('carnet',10) ->nullable();
+            $table->string('dui')->length(10)->nullable();
+            $table->string('genero',1)->nullable();
+            $table->integer('telefono')->length(8)->nullable();
+            $table->string('email')->nullable();
             $table->timestamps();
         });
     }

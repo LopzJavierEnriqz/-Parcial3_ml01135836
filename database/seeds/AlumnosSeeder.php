@@ -7,8 +7,6 @@ use Illuminate\Support\Facades\DB;
 class AlumnosSeeder extends Seeder
 {
     /**
-     * Run the database seeds.
-     *
      * @return void
      */
     public function run()
@@ -18,20 +16,18 @@ class AlumnosSeeder extends Seeder
         DB::statement('SET FOREIGN_KEY_CHECKS = 1');
 
         DB::table('alumnos')->insert([
-            'nombre' => 'leonel',
-            'apellido' => 'garcia',
+            'nombre0' => 'Julio',
+            'nombre1' => 'Enrique',
+            'apellido0' => 'Garcia',
+            'apellido1' => 'Cortez',
+            'carnet' => 'GC01135856',
             'fech_nac' => '10/02/2000',
-            'direccion' => 'tapalhuaca',
+            'direccion' => 'Las Lajas,Tapalhuaca,La Paz',
             'genero' => 'M',
             'telefono' => '71286126',
-            'email' => 'armand1515.lc@gmail.com',
-            'password' => bcrypt('leonel1515')
+            'email' => 'armand1616.lc@gmail.com',
         ]);
-
-
         factory(Alumnos::class, 18)->create();
-        
         //seleccion de los datos de la tabla alumnos
-        $seleccion = DB::select('select * from alumnos');
     }
 }

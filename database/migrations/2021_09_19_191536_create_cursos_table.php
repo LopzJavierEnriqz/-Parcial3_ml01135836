@@ -15,9 +15,9 @@ class CreateCursosTable extends Migration
     {
         Schema::create('cursos', function (Blueprint $table) {
             $table->increments('id');
-            $table->string("nombre");
-            $table->year("año");
-            $table->integer("ciclo");
+            $table->string("nombre")->nullable();
+            $table->year("año")->nullable();
+            $table->integer("ciclo")->nullable();
 
             $table->integer('idprofesor')->unsigned();
             $table->foreign('idprofesor')->references('id')->on('profesor')->onDelete('cascade')->onUpdate('cascade');

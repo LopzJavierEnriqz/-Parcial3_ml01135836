@@ -17,23 +17,19 @@ class ProfesorSeeder extends Seeder
         db::statement('SET FOREIGN_KEY_CHECKS = 1');
 
         DB::table('profesor')->insert([
-            'nombre' => 'leonel',
-            'apellido' => 'garcia',
+            'nombre0' => 'Leonel',
+            'nombre1' => 'Armando',
+            'apellido0' => 'Garcia',
+            'apellido1' => 'Cortez',
+            'carnet' => 'GC01135836',
             'dui' => '059240267',
+            'genero' => 'M',
             'telefono' => '71286126',
             'email' => 'armand1515.lc@gmail.com',
-            'password' => bcrypt('leonel1515')
         ]);
 
-        // Profesor::create({
-        //     'nombre' => 'leonel',
-        //     'apellido' => 'garcia',
-        //     'dui' => '059240267',
-        //     'telefono' => '71286126',
-        //     'email' => 'armand1515.lc@gmail.com',
-        //     'password' => 'leonel1515'
-        // });
+        
 
-        factory(Profesores::class, 18)->create();
+        //factory(Profesores::class, 18)->create();
     }
 }

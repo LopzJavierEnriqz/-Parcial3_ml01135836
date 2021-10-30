@@ -26,10 +26,9 @@ class NotasSeeder extends Seeder
             'promedio' => '10',
             'parcial' => '10',
             'idcurso' => '1',
-            'idprofesor' => '1',
             'idalumno' => '1'
         ]);
 
-        factory(Notas::class, 18)->create();
+        //factory(Notas::class, 18)->create();
     }
 }
