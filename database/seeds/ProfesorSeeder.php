@@ -1,5 +1,4 @@
 <?php
-use App\Profesores;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
 
@@ -17,15 +16,15 @@ class ProfesorSeeder extends Seeder
         db::statement('SET FOREIGN_KEY_CHECKS = 1');
 
         DB::table('profesor')->insert([
-            'nombre0' => 'Leonel',
-            'nombre1' => 'Armando',
-            'apellido0' => 'Garcia',
-            'apellido1' => 'Cortez',
-            'carnet' => 'GC01135836',
-            'dui' => '059240267',
+            'nombre0' => 'Javier',
+            'nombre1' => 'Enrique',
+            'apellido0' => 'Moran',
+            'apellido1' => 'Lopez',
+            'carnet' => 'ml01135856',
+            'dui' => '854962489',
             'genero' => 'M',
-            'telefono' => '71286126',
-            'email' => 'armand1515.lc@gmail.com',
+            'telefono' => '15487523',
+            'email' => 'javilop.lm@gmail.com',
         ]);
 
         

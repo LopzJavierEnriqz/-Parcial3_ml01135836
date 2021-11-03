@@ -1,8 +1,8 @@
 <?php
-use App\Alumnos;
-use Faker\Factory;
+
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
+use App\Alumnos;
 
 class AlumnosSeeder extends Seeder
 {
@@ -16,16 +16,16 @@ class AlumnosSeeder extends Seeder
         DB::statement('SET FOREIGN_KEY_CHECKS = 1');
 
         DB::table('alumnos')->insert([
-            'nombre0' => 'Julio',
-            'nombre1' => 'Enrique',
-            'apellido0' => 'Garcia',
-            'apellido1' => 'Cortez',
-            'carnet' => 'GC01135856',
-            'fech_nac' => '10/02/2000',
+            'nombre0' => 'Marvin',
+            'nombre1' => 'Alexander',
+            'apellido0' => 'Moran',
+            'apellido1' => 'Lopez',
+            'carnet' => 'ML01135876',
+            'fech_nac' => '15/08/2001',
             'direccion' => 'Las Lajas,Tapalhuaca,La Paz',
             'genero' => 'M',
-            'telefono' => '71286126',
-            'email' => 'armand1616.lc@gmail.com',
+            'telefono' => '75815260',
+            'email' => 'javi.lc@gmail.com',
         ]);
         factory(Alumnos::class, 18)->create();
         //seleccion de los datos de la tabla alumnos

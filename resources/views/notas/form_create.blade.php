@@ -3,7 +3,7 @@
         <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="form-group">
                 <strong>Alumno:</strong>
-                {!! Form::text('alumno', null, ['placeholder' => '', 'class' => 'form-control text-center']) !!}
+                {!! Form::text('idalumno', null, ['placeholder' => '', 'class' => 'form-control text-center']) !!}
             </div>
         </div>
         <div class="col-xs-12 col-sm-12 col-md-12">

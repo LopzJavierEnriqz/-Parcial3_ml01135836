@@ -48,7 +48,6 @@ class NotasController extends Controller
             'promedio' => 'required',
             'parcial' => 'required',
             'idcurso' => 'required',
-            'idprofesor' => 'required',
         ]);
 
         Notas::create($request->all());

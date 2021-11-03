@@ -19,24 +19,24 @@ class UserSeeder extends Seeder
 
         $user = new User();
         $user->nombre = 'Administrador';
-        $user->carnet = 'GC01135846';
-        $user->email = 'administrador@example.com';
+        $user->carnet = 'ML01135866';
+        $user->email = 'javi.lc@gmail.com';
         $user->password = bcrypt('admin');
         $user->save();
         $user->roles()->attach($role_admin);
         
         $user = new User();
-        $user->nombre = 'Leonel';
-        $user->carnet = 'GC01135836';
-        $user->email = 'armand1515.lc@gmail.com';
+        $user->nombre = 'Javier';
+        $user->carnet = 'Ml01135856';
+        $user->email = 'Francisco.ml@gmail.com';
         $user->password = bcrypt('secret');
         $user->save();
         $user->roles()->attach($role_profesor);
 
         $user = new User();
-        $user->nombre = 'Julio';
-        $user->carnet = 'GC01135856';
-        $user->email = 'armand1616.lc@gmail.com';
+        $user->nombre = 'Marvin';
+        $user->carnet = 'ML01135876';
+        $user->email = 'Marvin.ml@gmail.com';
         $user->password = bcrypt('secret');
         $user->save();
         $user->roles()->attach($role_alumno);

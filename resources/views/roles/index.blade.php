@@ -27,7 +27,7 @@
 
 
     <table class="table table-hover table-striped mt-2 ">
-        <thead class="thead-dark text-center">
+        <thead class=" text-center"  style="background-color: #e3f2fd;">
             <tr>
                 <th>No</th>
                 <th>Id</th>

@@ -22,7 +22,7 @@
 
 <body>
     <div id="app">
-        <nav class="navbar navbar-default navbar-static-top navbar-expand-lg navbar-dark bg-dark">
+        <nav class="navbar navbar-default navbar-static-top navbar-expand-lg navbar-ligth" style="background-color: #e3f2fd">
             <div class="container">
                 <div class="navbar-header">
 

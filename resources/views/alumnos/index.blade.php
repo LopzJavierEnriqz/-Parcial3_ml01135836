@@ -29,7 +29,7 @@
 
 
     <table class="table table-hover table-striped table-responsive mt-2 ">
-        <thead class="thead-dark text-center">
+        <thead class=" text-center"  style="background-color: #e3f2fd;">
             <tr>
                 <th>No</th>
                 <th>Id</th>
@@ -67,9 +67,6 @@
     <div class="col">
         
     {!! $alumnos->links() !!}
-    </div>
-    <div class="col "style="text-align: rigth">
-        <a class="btn btn-danger" style="width:75px; margin-bottom: 5px" href="·">PDF</a>
     </div>
 </div>
 

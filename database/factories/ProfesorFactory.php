@@ -5,12 +5,12 @@ use Faker\Generator as Faker;
 
 $factory->define(Profesores::class, function (Faker $faker) {
     return [
-        'nombre' => 'Armando',
-        'apellido' => 'Cortez',
-        'dui' => '059240267',
+        'nombre' => 'Alvaro',
+        'apellido' => 'Moran',
+        'dui' => '023546892',
         'genero' => 'm',
-        'telefono' => '71286126',
-        'email' => 'armand1616.lc@gmail.com',
-        'password' => bcrypt('armando1616')
+        'telefono' => '70151669',
+        'email' => 'Alvaro.lc@gmail.com',
+        'password' => bcrypt('Alvaro.lc')
     ];
 });

@@ -30,7 +30,7 @@
 
 
         <table class="table table-hover table-striped mt-2 ">
-            <thead class="thead-dark text-center">
+            <thead class=" text-center"  style="background-color: #e3f2fd;">
                 <tr>
                     <th>No</th>
                     <th>Id</th>
@@ -93,7 +93,7 @@
 
 
         <table class="table table-hover table-striped mt-2 ">
-            <thead class="thead-dark text-center">
+            <thead class=" text-center"  style="background-color: #e3f2fd;">
                 <tr>
                     <th>No</th>
                     <th>Id</th>
@@ -139,12 +139,6 @@
                     <h2 class="text-center mt-2">Registro Notas</h2>
                 </div>
             </div>
-            <div class="col-lg-12 margin-tb">
-
-                <div class="pull-left">
-                    <a class="btn btn-success" href="{{ route('notas.create') }}"> Añadir Registro</a>
-                </div>
-            </div>
         </div>
 
 
@@ -156,7 +150,7 @@
 
 
         <table class="table table-hover table-striped mt-2 ">
-            <thead class="thead-dark text-center">
+            <thead class=" text-center"  style="background-color: #e3f2fd;">
                 <tr>
                     <th>No</th>
                     <th>Id</th>

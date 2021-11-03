@@ -14,15 +14,17 @@
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
         integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+        integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- Styles -->
-   
+
 </head>
 
 <body>
-    <nav class="navbar navbar-default navbar-static-top navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-default navbar-static-top navbar-expand-lg navbar-ligth" style="background-color: #e3f2fd">
         <div class="container">
-            
+
 
             <div class="collapse navbar-collapse" id="app-navbar-collapse">
                 <!-- Left Side Of Navbar -->
@@ -46,16 +48,14 @@
                                     class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item ">
-                            <a class="nav-link" href="/notas">Notas <span
-                                    class="sr-only">(current)</span></a>
+                            <a class="nav-link" href="/notas">Notas <span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item ">
                             <a class="nav-link" href="/cursos">Cursos <span
                                     class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item ">
-                            <a class="nav-link" href="/roles">Roles <span
-                                    class="sr-only">(current)</span></a>
+                            <a class="nav-link" href="/roles">Roles <span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" data-toggle="dropdown"
@@ -65,9 +65,8 @@
 
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                                 <li>
-                                    <a class="dropdown-item" href="{{ route('logout') }}"
-                                        onclick="event.preventDefault();
-                                                                     document.getElementById('logout-form').submit();">
+                                    <a class="dropdown-item" href="{{ route('logout') }}" onclick="event.preventDefault();
+                                                                         document.getElementById('logout-form').submit();">
                                         Logout
                                     </a>
 
@@ -91,11 +90,11 @@
                     <div class="col-md-8 col-md-offset-2">
                         <div class="panel panel-default">
                             <div class="panel-heading">Aviso</div>
-        
+
                             <div class="panel-body">
-                                
+
                                 <p>Es necesario logearse para hacer uso del proyecto</p>
-        
+
                             </div>
                         </div>
                     </div>
@@ -104,7 +103,7 @@
 
         </div>
     </div>
-    
+
     <br>
     @extends('footer.footer')
 </body>
